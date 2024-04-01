@@ -1,0 +1,100 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0 0;
+    background-color: #D8DBE3;
+}
+
+.project-block {
+    display: flex;
+    padding: 2%;
+    margin: 5%;
+    background-color: #B6B9C0;
+    border-radius: 10px;
+}
+
+.project-block [key=0] {
+    display: flex;
+    padding: 2%;
+    background-color: #B6B9C0;
+    border-radius: 10px;
+}
+
+.slideshow {
+    position: relative;
+    width: 35%;
+}
+  
+.slideshow img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+  
+.slide-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.slide-controls img {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    padding: 20px 20px;
+}
+  
+.slide-icon:hover {
+    filter: brightness(70%);
+}
+
+.left .slide-controls button {
+    margin-right: 10px;
+}
+  
+.right .slide-controls button {
+    margin-left: 10px;
+}
+
+.left {
+    flex-direction: row;
+}
+  
+.right {
+    flex-direction: row-reverse;
+}
+
+.project-details {
+    width: 65%;
+    padding: 1% 4%;
+}
+
+.project-details h2 {
+    margin-top: 0;
+}
+  
+.project-details ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.project-details ul li {
+    margin-bottom: 5px;
+}
+
+.project-details .description {
+    white-space: pre-wrap; 
+    font-family: 'Segoe UI';
+    font-size: 16px; 
+    color: black; 
+}
+
+.project-details .technologies {
+    color: #333; 
+}

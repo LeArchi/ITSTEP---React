@@ -1,0 +1,72 @@
+.about-container {
+    display: flex;
+    width: 100%;
+    padding: 50px 0 0 0;
+    background-color: #D8DBE3;
+  }
+  
+  .left-section {
+    width: 60%;
+  }
+  
+  .right-section {
+    margin: 10% 5% 0 5%;
+    width: 35%;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .name-section {
+    margin-bottom: 20px;
+  }
+  
+  .name-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .name-section h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .paragraph-section p {
+    font-weight: normal;
+  }
+  
+  .see-projects-button {
+    text-decoration: none;
+    background-color: #4D6567;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display:inline-block;
+  }
+
+  .see-projects-button:hover {
+    background-color: #213536;
+  }
+  
+  .education-section {
+    margin-top: 20px;
+  }
+  
+  .education-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .social-media-icons {
+    margin-top: 20px;
+  }
+  
+  .social-media-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+  }

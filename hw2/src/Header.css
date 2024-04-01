@@ -1,0 +1,35 @@
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E3E;
+    color: white;
+    z-index: 1000;
+    font-size: large;
+    margin-bottom: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    margin: 0 20%;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .divider {
+    color: white;
+    Margin: 9px 0 0 0;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 10px;
+  }
