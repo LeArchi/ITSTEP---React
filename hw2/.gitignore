@@ -10,7 +10,7 @@
 
 # production
 /build
-/src/Components/context.js
+/src/Utils/context.js
 
 # misc
 .DS_Store
