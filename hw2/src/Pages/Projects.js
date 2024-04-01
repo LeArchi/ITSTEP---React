@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Projects.css'; // Import CSS file for styling
+import './Projects.css'; 
 
 const Projects = () => {
   const projects = [
