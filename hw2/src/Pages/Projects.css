@@ -5,9 +5,14 @@
     background-color: #D8DBE3;
 }
 
+.projects-container h1 {
+    margin: 2% 0 -1% 0;
+    align-self: center;
+}
+
 .project-block {
     display: flex;
-    padding: 2%;
+    padding: 1%;
     margin: 3% 5% 2% 5%;
     background-color: #BFC7DB;
     border-radius: 10px;

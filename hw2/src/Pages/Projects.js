@@ -43,27 +43,38 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
+      <h1>My Projects</h1>
       {projects.map((project, index) => (
         <div key={index} className={`project-block ${index % 2 === 0 ? 'left' : 'right'}`}>
           <div className="slideshow">
-            <img 
+            {index !== projects.length - 1 && (
+              <>
+                <img 
+                  src={project.images[currentImageIndices[index]]}
+                  alt={`Project ${index + 1} img ${currentImageIndices[index] + 1}`} 
+                />
+                <div className="slide-controls">
+                  <img
+                    src="previous.png"
+                    alt="Previous"
+                    className="slide-icon"
+                    onClick={() => nextSlide(index)}
+                  />
+                  <img
+                    src="next.png"
+                    alt="Next"
+                    className="slide-icon"
+                    onClick={() => prevSlide(index)}
+                  />
+                </div>
+              </>
+            )}
+            {index === projects.length - 1 && (
+              <img 
                 src={project.images[currentImageIndices[index]]}
                 alt={`Project ${index + 1} img ${currentImageIndices[index] + 1}`} 
-            />
-            <div className="slide-controls">
-            <img
-                src="previous.png"
-                alt="Previous"
-                className="slide-icon"
-                onClick={() => nextSlide(index)}
               />
-              <img
-                src="next.png"
-                alt="Next"
-                className="slide-icon"
-                onClick={() => prevSlide(index)}
-              />
-            </div>
+            )}
           </div>
           <div className="project-details">
             <h2>{project.title}</h2>
