@@ -8,7 +8,7 @@
 .project-block {
     display: flex;
     padding: 2%;
-    margin: 5%;
+    margin: 3% 5% 2% 5%;
     background-color: #BFC7DB;
     border-radius: 10px;
 }
@@ -19,7 +19,7 @@
 }
   
 .slideshow img {
-    height: 300px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
     border-radius: 7px;
@@ -84,10 +84,11 @@
 .project-details .description {
     white-space: pre-wrap; 
     font-family: 'Segoe UI';
-    font-size: 16px; 
+    font-size: 18px; 
     color: black; 
 }
 
 .project-details .technologies {
     color: #333; 
+    font-size: 18px;
 }
