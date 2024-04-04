@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { useAppContext } from '../Utils/Context';
 
 function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { firestore } = useAppContext();
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -15,7 +17,7 @@ function Contact() {
     setMessage(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (isSubmitted) {
@@ -31,6 +33,16 @@ function Contact() {
       return;
     }
     // validation passed.
+    
+    try {
+      await firestore.collection('Messages').add({
+        email: email,
+        message: message,
+        timestamp: new Date()
+      });
+    } catch (error) {
+    }
+    
     setShowConfirmation(true);
     setIsSubmitted(true);
     setEmail('');
@@ -43,37 +55,39 @@ function Contact() {
   };
 
   return (
-    <div className="contact-form">
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={handleEmailChange}
-            required
-            disabled={isSubmitted}
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={handleMessageChange}
-            required
-            disabled={isSubmitted}
-          />
-        </div>
-        <button type="submit" disabled={isSubmitted}>Submit</button>
-      </form>
-      {showConfirmation && (
-        <div className="confirmation-message">
-          Thank you for your message! I will respond soon.
-        </div>
-      )}
+    <div className="contact-container">
+      <div className="contact-form">
+        <h2>Contact Me</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="email">Your email:</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={handleEmailChange}
+              required
+              disabled={isSubmitted}
+            />
+          </div>
+          <div>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              value={message}
+              onChange={handleMessageChange}
+              required
+              disabled={isSubmitted}
+            />
+          </div>
+          <button type="submit" disabled={isSubmitted}>Submit</button>
+        </form>
+        {showConfirmation && (
+          <div className="confirmation-message">
+            Thank you for your message! I will respond soon.
+          </div>
+        )}
+      </div>
     </div>
   );
 }

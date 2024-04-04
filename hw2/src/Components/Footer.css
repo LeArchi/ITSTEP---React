@@ -1,7 +1,8 @@
-.footer-container {
+  .footer-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: #2C3E3E;
     color: white;
     padding: 20px;
@@ -9,8 +10,10 @@
     z-index: 999;
   }
   
-  .left-section-footer {
+  .left-section-footer,
+  .right-section-footer {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -45,13 +48,6 @@
     background-color: #141C21;
   }
   
-  .right-section-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%; 
-  }
-  
   .right-section-footer p {
     font-size: 14px;
   }
@@ -59,4 +55,10 @@
   .footer-links a {
     color: white;
     margin-right: 10px;
+  }
+
+  .submitted-message {
+    padding-right: 15px;
+    margin-top: 0px;
+    color: white;
   }
