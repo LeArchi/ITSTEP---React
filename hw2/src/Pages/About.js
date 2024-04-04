@@ -14,8 +14,8 @@ const About = () => {
           <h2>Software Developer</h2>
         </div>
         <div className="paragraph-section">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>I'm a full-stack software developer, specializing in back-end languages such as C++ and C#. I developed this website using React.js, Google Firebase database and fully set up the Linux hosting server. I have also created mobile apps using various .NET frameworks and Node.js servers.</p>
+          <p>I enjoy participating in cybersecurity CTF (capture the flag) events and have a dedicated team with which I practice weekly. In my free time I challenge myself to ride excessive distances on my bike to enjoy sunrises while camping. I'm also highly curious in any mechanical or electrical systems.</p>
           <Link to="/projects" className="see-projects-button">
             <i className="fas fa-folder-open"></i> See my projects
           </Link>
@@ -25,10 +25,12 @@ const About = () => {
           <p>- IT Step Academy <br/> - Birmingham City University</p>
         </div>
         <div className="social-media-icons">
-          <i className="fab fa-facebook-f"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-linkedin-in"></i>
+          <a href="https://www.instagram.com/danya.lv/" target="_blank" rel="noopener noreferrer">
+            <img class="social-media-icons" src="/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/danylo-lopatnov" target="_blank" rel="noopener noreferrer">
+            <img class="social-media-icons" src="/linkedin.png" alt="LinkedIn" />
+          </a>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 .projects-container {
     display: flex;
     flex-direction: column;
-    margin: 60px 0 0 0;
+    margin: 100px 0 0 0;
     background-color: #D8DBE3;
 }
 
@@ -9,20 +9,13 @@
     display: flex;
     padding: 2%;
     margin: 5%;
-    background-color: #B6B9C0;
-    border-radius: 10px;
-}
-
-.project-block [key=0] {
-    display: flex;
-    padding: 2%;
-    background-color: #B6B9C0;
+    background-color: #BFC7DB;
     border-radius: 10px;
 }
 
 .slideshow {
     position: relative;
-    width: 35%;
+    width: 40%;
 }
   
 .slideshow img {
@@ -71,7 +64,7 @@
 }
 
 .project-details {
-    width: 65%;
+    width: 60%;
     padding: 1% 4%;
 }
 

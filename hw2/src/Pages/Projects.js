@@ -5,21 +5,21 @@ const Projects = () => {
   const projects = [
     {
       title: 'Mobile Fitness App',
-      description: '- Developed a full-stack mobile application using the MAUI .NET framework connected to a remote Node.js server with a MySQL database through Express.js. Used SQL Management Studio to set up the database. \n\n- Led a team to effectively design and integrate app features within a structured timeline using GitHub and ClickUp. \n\n- Integrated REST APIs to enable barcode database access, google login and barcode recognition from a live camera.Deserialized JSON data into the structured class system of the application.',
-      images: ['image1.jpg', 'image2.jpg', 'image3.jpg'],
+      description: 'Developed a full-stack mobile application using the MAUI .NET framework connected to a remote Node.js server with a MySQL database through Express.js. Used SQL Management Studio to set up the database. \n\nLed a team to effectively design and integrate app features within a structured timeline using GitHub and ClickUp. \n\nIntegrated REST APIs to enable barcode database access, google login and barcode recognition from a live camera.Deserialized JSON data into the structured class system of the application.',
+      images: ['image1.png', 'image2.png', 'image3.png'],
       technologies: 'C#, .NET, Node.js, REST API, MySQL, Xamarin, MUAI'
     },
     {
-      title: 'Project 2',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-      images: ['image4.jpg', 'image5.jpg', 'image6.jpg'],
-      technologies: 'React, Node.js, MongoDB'
+      title: 'Rocket Propulsion Analysis',
+      description: 'Created a Rocket Propulsion Simulation Analysis software using C++ to take data on rocket flight path parameters from a UI and perform physics calculations to predict velocity and mass at any given time. I used standard programming practices to structure the application to allow for modulation and scalability.',
+      images: ['image4.png', 'image6.png', 'image5.png'],
+      technologies: 'Windows.h, iomanip, conio.h, lists, iterators'
     },
     {
-      title: 'Project 3',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      title: 'Click Bots',
+      description: 'Developed “Click-Bots” with C++ and Windows.h to simulate adaptable human input by manipulating keyboard andmouse movement. This was used to make appointment reservations by automatically constantly checking for earlier times and sending a mobile notification when it was available. This application saved a year of waiting time \n\nUtilized Windows.h, conio.h, cmath, iomanip libraries for calculation time optimisation and extra functionality.',
       images: ['image7.jpg', 'image8.jpg', 'image9.jpg'],
-      technologies: 'Angular, HTML, CSS'
+      technologies: 'OpenCV, '
     }
   ];
 
